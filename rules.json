@@ -1,0 +1,17 @@
+[
+	{
+		"rule":"whenAttack",
+	 	"conditions":["spidernear"],
+	 	"action":"attack"
+	 },
+	 {
+	 	"rule":"whenfindkey",
+		"conditions":["notspidernear","nothaskey"],
+		"action":"findkey"
+	},
+	{
+	 	"rule":"whenfindportal",
+		"conditions":["notspidernear","haskey"],
+		"action":"findportal"
+	}
+]
